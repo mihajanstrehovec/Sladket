@@ -1,7 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} off
-RewriteCond %{REQUEST_URI} !/api/artikli
-RewriteRule ".*" "https://localhost/%{HTTPS_HOST}%{REQUEST_URI}"
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
