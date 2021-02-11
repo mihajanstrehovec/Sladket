@@ -4,10 +4,10 @@
 
 class dbINIT {
 
-    private static $host = "localhost";
-    private static $user = "root";
-    private static $password = "ep";
-    private static $schema = "sladket";
+    private static $host = "eu-cdbr-west-03.cleardb.net";
+    private static $user = "b417ddb747ab02";
+    private static $password = "878b27b2";
+    private static $schema = "heroku_d29048d2d0e7589";
     private static $instance = null;
 
     private function __construct() {
