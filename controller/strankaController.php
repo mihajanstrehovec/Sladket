@@ -264,7 +264,7 @@ class strankaController {
                 $mail->Username   = 'mihec.strehci@gmail.com';                    
                 $mail->Password   = 'ritmecarji';     
                 $mail->Port = 587;                       
-                $mail->SMTPSecure = tls;         
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
               
                 $mail->setFrom('sladkizob.info@gmail.com', 'sladket');
                 $mail->addAddress($data["mailStranke"]);     
