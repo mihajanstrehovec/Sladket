@@ -11,6 +11,8 @@ if($_SESSION["tipUporabnika"] == NULL){
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+$FILE_URL = str_replace("/index.php", "",$_SERVER["SCRIPT_NAME"]);
+define("BASE_FILE", $FILE_URL . "/");
 
 require ''.$BASE_FILE.'PHPMailer-master/src/Exception.php';
 require ''.$BASE_FILE.'PHPMailer-master/src/PHPMailer.php';
@@ -25,8 +27,7 @@ require_once("controller/adminController.php");
 require_once("controller/eShopRestControler.php");
 
 define("BASE_URL", $_SERVER["SCRIPT_NAME"] . "/");
-$FILE_URL = str_replace("/index.php", "",$_SERVER["SCRIPT_NAME"]);
-define("BASE_FILE", $FILE_URL . "/");
+
 #var_dump($FILE_URL);
 #exit();
 define("IMAGES_URL", rtrim($_SERVER["SCRIPT_NAME"], "index.php") . "static/images/");
