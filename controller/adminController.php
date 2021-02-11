@@ -133,7 +133,7 @@ class adminController {
     public static function adminPrijavaSubmit() {
         $data = filter_input_array(INPUT_POST, self::getRulesRegistracija());
 
-        if(adminController::preveriAdminCert($data["mail"])){
+        
         # Preverimo, če je email naslov ustrezen
             if(!filter_var($data['eMail'], FILTER_VALIDATE_EMAIL)){
            
@@ -167,7 +167,7 @@ class adminController {
                 $err = "Email naslov in geslo se ne ujemata";
                 echo ViewHelper::renderRegError("view/layout.php", "view/admin/vpisAdmin.php", $values, $err);
             }
-        }        
+            
     }
 
     public static function spremeniGeslo() {
