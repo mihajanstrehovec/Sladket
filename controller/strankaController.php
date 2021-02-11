@@ -262,7 +262,7 @@ class strankaController {
                 $mail->SMTPAuth   = true; 
                                   
                 $mail->Username   = 'mihec.strehci@gmail.com';                    
-                $mail->Password   = '<password>';     
+                $mail->Password   = 'ritmecarji';     
                 $mail->Port = 587;                       
                 $mail->SMTPSecure = tls;         
               

@@ -10,7 +10,12 @@ if($_SESSION["tipUporabnika"] == NULL){
 #var_dump($_SESSION);
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+// Load Composer's autoloader
+require 'vendor/autoload.php';
+
 $FILE_URL = str_replace("/index.php", "",$_SERVER["SCRIPT_NAME"]);
 define("BASE_FILE", $FILE_URL . "/");
 
