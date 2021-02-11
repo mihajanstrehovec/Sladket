@@ -8,11 +8,11 @@ function zoom(event) {
   
      if (event.deltaY < 0) {
        // Zoom in
-       scale -= event.deltaY * +4;
+       scale -= event.deltaY * +4 / 100;
      }
      else {
        // Zoom out
-       scale -= event.deltaY * +4;
+       scale -= event.deltaY * +4 / 100;
      }
     
   
