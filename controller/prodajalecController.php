@@ -209,7 +209,7 @@ class prodajalecController {
         
         
             
-        if(prodajalecController::preveriCertProd($data)){
+       
             
             #$mail = [$data["mailStranke"]];
             $Prodajalec = eshopDB::getProdajalec($data);
@@ -239,10 +239,7 @@ class prodajalecController {
                 echo ViewHelper::renderRegError("view/layout.php", "view/prodajalec/vpisProdajalec.php", $values, $err);
             }
 
-        }
-        else{
-            echo "Nimate dostopa do tega računa. Zbrišite site preferences in poskusite ponovno.";
-        }
+        
         
 
         
