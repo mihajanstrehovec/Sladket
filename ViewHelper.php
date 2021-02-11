@@ -38,7 +38,7 @@ class ViewHelper {
     }
 
     // Renderiranje errorja, ki poskrbi za prikaz rdečega teksta na obrazcu ob napaki (vpis, registracija...)
-    public static function renderRegError($layout, $file, $variables = array(), $err) {
+    public static function renderRegError($layout, $file, $variables = array()) {
         extract($variables);
 
         ob_start();
