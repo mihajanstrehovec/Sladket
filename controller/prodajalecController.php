@@ -162,6 +162,15 @@ class prodajalecController {
 
         }
 
+        if($data["uporabniskoIme"] == null && $data["geslo"] == null ){
+           
+            $data["err"] = "Prosimo ne pustite popolnoma praznega obrazca.";
+            echo ViewHelper::render("view/layout.php", "view/prodajalec/profilProdajalec.php", ["data" => $data]);
+            #echo ViewHelper::error("view/error.php", "Prosimo ne pustite praznega obrazca.");
+            
+
+        }
+
 
 
        

@@ -11,6 +11,18 @@ img {vertical-align: middle;}
  
 }
 
+.slideshow-container > img {
+  width: 100px;
+ 
+}
+
+.displayImage{
+    width: 80%!important;
+    height: auto;
+    max-height: 200px!important;
+
+}
+
 /* Gumba za prejšno in naslednjo sliko */
 .prev, .next {
   cursor: pointer;

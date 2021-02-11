@@ -245,7 +245,7 @@ class eshopDB extends AbstractDB {
     }
 
 
-    // ADMIN SHIT
+    // ADMIN
 
     public static function getProdajalci() {
         return parent::query("SELECT idProdajalca, uporabniskoIme, eMail, aktiviran"

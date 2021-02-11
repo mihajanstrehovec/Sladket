@@ -56,7 +56,7 @@ require_once "model/eshopDB.php";
                 <?php foreach ($Artikli as $Artikel): ?>
                     <!-- If stavki za preverjanje tipa uporabnika (shranjeno v $_SESSION ob prijavi) -->
                     
-                    <?php if($_SESSION["tipUporabnika"] == "stranka" or $_SESSION["tipUporabnika"] == NULL):?>  <!-- STRANKA -->
+                    <?php if($_SESSION["tipUporabnika"] == "stranka" || $_SESSION["tipUporabnika"] == "gost"):?>  <!-- STRANKA -->
                         <!-- If stavki za preverjanje stanja aktivnosti izdelka (1 => aktivirano, prikaži in obratno za 0) -->
                         <?php if($Artikel["aktiviran"] == 1 && $_GET["kategorija"] == NULL):?><!-- To prikažemo, ko je izdelek aktiviran in izbrana ni nobena kategorija -->
                                 <a href ="<?= BASE_URL . "artikel?idArtikla=" . $Artikel["idArtikla"]?>">

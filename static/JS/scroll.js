@@ -1,3 +1,7 @@
+// ČE bo čas implementiraj funkcijo, ki bo glede na scroll premaknila ozadje zna bit lit
+
+
+
 function zoom(event) {
     imgSc = document.getElementById("bgIMGscroll");
     event.preventDefault();
@@ -17,7 +21,7 @@ function zoom(event) {
     //scale = Math.min(Math.max(.125, scale), 4);
     //console.log()
     // Apply scale transform
-    imgSc.style.transform = translateY(scale+"px");
+    imgSc.style.transform = `translateY(${scale}px)`;
   }
   
   let scale = 1;

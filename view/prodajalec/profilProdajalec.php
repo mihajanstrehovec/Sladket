@@ -2,6 +2,8 @@
 <?php
     #var_dump($_SESSION);
     #exit();
+    #var_dump($data);
+    #exit();
 ?>
 
 <div class ="container">
@@ -11,9 +13,11 @@
             <div class ="titleProfil" align ="center" style ="padding-top: 0.4vh;">
                 <h4 style ="font-weight: 600;">PROFIL</h4>
             </div>
-    
-            <div class ="profilVsebnik" style="padding: 7%; height: 70vh;">
+
             
+
+            <div class ="profilVsebnik" style="padding: 7%; height: 70vh;">
+            <p style ="color: red"><?= $data["err"]?></p>
                 <!-- Form za spreminjanje gesla -->
                 <form action = "" method = "POST">
                 Sprememba gesla:

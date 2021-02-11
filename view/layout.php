@@ -4,6 +4,11 @@ require_once 'db_files/db_artikel.php';
 #exit();
 ?>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -24,8 +29,8 @@ require_once 'db_files/db_artikel.php';
 
 <nav class="navbar navbar-expand-lg navbar-dark static-top">
   <div class="container">
-    <a id = "smarket"lass="navbar-brand sMarket" href ="<?= BASE_URL . "trgovina" ?>">
-          sMARKET
+    <a id = "smarket"class="navbar-brand sMarket" href ="<?= BASE_URL . "trgovina" ?>">
+          SLADKET
     </a>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,7 +200,7 @@ $_SESSION['price'] = array(100);
         <!--<?= var_dump($_SESSION); ?>-->
         
 
-<img id="bgIMGscroll" src = "<?= IMAGES_URL . "bgScroll.png"?>" style=" z-index: -10000; position: absolute; left:0; top:0;">
+<img id="bgIMGscroll" src = "<?= IMAGES_URL . "bgScroll.png"?>" style=" z-index: -10000; position: absolute; left:0; top:-1000px; opacity: 0.3">
 
 
 
@@ -204,5 +209,5 @@ $_SESSION['price'] = array(100);
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src = "<?= JS_URL . "cart.js"?>"></script>
 <script src = "<?= JS_URL . "navBar.js"?>"></script>
+<script src = "<?= JS_URL . "scroll.js"?>"></script>
 
-<!-- <script src="scroll.js"></script>  -->

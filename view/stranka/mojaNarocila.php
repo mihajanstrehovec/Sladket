@@ -80,7 +80,7 @@
                     <!-- NAROČILA POTRJENA -->
                     <?php  foreach ($narocila as $narocilo): ?>
                         <?php for($i = 0; $i < count($narocilo); $i++):?>
-                                <?php if($narocilo[$i]["potrjeno"] == 1):?>
+                                <?php if($narocilo[$i]["potrjeno"] == 1 && $narocilo[$i]["stornirano"] == 0):?>
                                 
                                     <h5><b>ID naročila:</b> <?= $narocilo[$i]["idNaročila"]?></h5>
                                     <h6><b>IZDELKI: </b>
@@ -104,12 +104,7 @@
                                     
                                     <h6><b>Končna cena:</b> <?= $narocilo[$i]["total"] ?> </h6>
 
-                                    <!-- Form za storniranje potrjenih naročil -->
-                                    <form action = "" method = "POST">
-                                        <input type = "hidden" name = "idNarocila" value = "<?= $narocilo[$i]["idNaročila"]?>">
-                                        <input type = "hidden" name = "ukaz" value = "storniraj">
-                                        <button type="submit" class ="btn " style = "margin-left: 3vw; background-color: rgba(41, 43, 44, 0.5); color: white;">Storniraj</button>
-                                    </form> 
+                                 
                                     
                                     <hr class="mt-2 mb-3" style ="border-top: 1.6px solid rgba(0,0,0,.55)"/>
                                 

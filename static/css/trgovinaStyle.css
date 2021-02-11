@@ -8,7 +8,6 @@
 
 
 
-
 .itemList{
     width: 55vw;
     height: 66vh;
@@ -83,6 +82,6 @@ h3{
 }
 
 .prikaznoImeArtikla{
-    font-family: "Product Sans";
+    font-family: 'Nunito', sans-serif;
         font-weight:bold!important;
 }

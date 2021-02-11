@@ -1,4 +1,4 @@
-
+<?php $_SESSION["stop"] = 0; ?>
 <div class ="container">
     <div class ="row no-gutters justify-content-center">
         <div class ="col-lg-10" align ="center">
@@ -6,11 +6,11 @@
         
             <div class = col-lg-6>
                 <div class ="titleRegister" align ="center" style ="padding-top: 0.4vh; margin-top: 10vh;">
-                    <h4 style ="font-weight: 600;">REGISTRACIJA1111</h4>
+                    <h4 style ="font-weight: 600;">REGISTRACIJA</h4>
                 </div>
             
                 <div class ="registerVsebnik" style="padding: 60px;">
-
+                    <p style = "color: red;"> <?= $data["err1"] ?> </p>
                     <form action = "<?= BASE_URL . "uporabnik/registracija/potrditvenaKoda"?>" method = "POST">
                         
                         <!-- V primeru napačne captche -->
@@ -49,8 +49,9 @@
                         </div>
                         
                         <!-- Geslo -->
+                        
                         <div class = "form-row" style = "margin-top: 3vh;">
-                    
+                        <p style = "color: red;"> <?= $data["err2"] ?> </p>
                             <div class ="col">
                                 <input type = "password" name = "gesloStranke" placeholder = "Geslo" class = "form-control">
                             </div>
@@ -76,6 +77,7 @@
 
                         <!-- Poštni naslov -->
                         Naslov 
+                        <p style = "color: red;"> <?= $data["err4"] ?> </p>
                         <div class = "form-row">
                             <div class ="col-lg-9">
                                 <input type = "text" name = "ulica" placeholder = "Ulica" class = "form-control">
@@ -96,9 +98,10 @@
                             </div>
                         </div>
                         
-                        <!-- CAPTCHA -->
-                        <!-- HARD KODIRANO NA NAŠ NASLOV; OB SPREMEMEMBI DIREKTIORIJEV NUJNO POSODOBI LINK -->
+                     
+                       
                         <img src="<?= BASE_FILE ?>view/stranka/captcha.php" class = "captcha">
+                        <p style = "color: red;"> <?= $data["err3"] ?> </p>
                         <input type="text" placeholder = "Vnesite captcho" name="captcha"class = "captcha">
 
                         <div class = "form-row justify-content-center">

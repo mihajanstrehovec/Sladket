@@ -188,12 +188,37 @@ class strankaController {
         #var_dump($_SESSION);
         #exit();
         # Preverimo, če je captcha naslov ustrezen
-        if($data["captcha"] != $_SESSION["captcha_code"]){
-            $err = "Vnesite pravilno Captcho";
-            echo ViewHelper::renderRegError("view/layout.php", "view/stranka/register.php", $values, $err);
+        $stop = 0;
+        
+         if($data["imeStranke"] == NULL && $data["priimekStranke"] == NULL && $data["mailStranke"] == NULL 
+         && $data["gesloStranke"] == NULL && $data["gesloPonovi"] == NULL && $data["captcha"] == NULL && $data["ulica"] == NULL &&
+         $data["hisnaSt"] == NULL && $data["posta"] == NULL && $data["postnaSt"] == NULL){
+             $data["err1"] = "Prosimo ne pustite popolnoma praznega obrazca.";
+             $stop = 1;
+             echo ViewHelper::render("view/layout.php", "view/stranka/register.php", ["data" => $data]);
+            
+            
+
+            
+        }
+        
+
+       
+        
+
+        
+
+        
+
+        if($stop != 1 && $data["captcha"] != $_SESSION["captcha_code"]){
+            
+            $data["err3"] = "Vnesite pravilno Captcho";
+             $stop = 1;
+             echo ViewHelper::render("view/layout.php", "view/stranka/register.php", ["data" => $data]);
+            
         }
 
-        if(!filter_var($data['mailStranke'], FILTER_VALIDATE_EMAIL)){
+        if($stop != 1 &&  !filter_var($data['mailStranke'], FILTER_VALIDATE_EMAIL)){
            
             $err = "Prosimo vnesite validen e-mail";
             echo ViewHelper::renderRegError("view/layout.php", "view/stranka/register.php", $values, $err);
@@ -201,16 +226,24 @@ class strankaController {
         }
         
         # Preverimo, če se gesli ujemata
-        else if($data["gesloStranke"] != $data["gesloPonovi"]){
+        else if($stop != 1 && $data["gesloStranke"] != $data["gesloPonovi"]){
             
             $err = "Gesli se ne ujemata";
             echo ViewHelper::renderRegError("view/layout.php", "view/stranka/register.php", $values, $err);
-           
+            
+        }
+
+        if($stop != 1 && $data["ulica"] == null  && $data["hisnaSt"] == null  && $data["uposta"] == null  && $data["postnaSt"] == null){
+            
+            $data["err4"] = "Vnesite naslov";
+             $stop = 1;
+             echo ViewHelper::render("view/layout.php", "view/stranka/register.php", ["data" => $data]);
+            
         }
 
         
         
-        else if (self::checkValues($data)) {
+        else if ($stop != 1 &&  self::checkValues($data)) {
 
             $data["gesloStranke"] = password_hash($data["gesloStranke"], PASSWORD_BCRYPT);
 
@@ -218,8 +251,7 @@ class strankaController {
             
 
             
-
-
+            
             $mail = new PHPMailer(true);
 
                 // Pošiljanje potrditvene kode preko phpmailer  
@@ -249,10 +281,11 @@ class strankaController {
                 }
                 
         
-
+                
             echo ViewHelper::render("view/layout.php", "view/stranka/emailPotrditev.php", ["data" => $data]);
             
-            }
+        }
+
     }
 
     public static function registracijaSubmit() {
@@ -360,13 +393,22 @@ class strankaController {
         
        
         $data = filter_input_array(INPUT_POST, $rules);
-        #var_dump($data["mailStranke"], $_SESSION);
+        #var_dump(strlen($data["gesloStranke"]));
         #exit();
+
+        $submit = 1;
+
+        if($data["mailStranke"] == NULL && strlen($data["gesloStranke"]) == 0){
+            $data["err1"] = "Prosimo ne pustite popolnoma praznega obrazca.";
+            echo ViewHelper::render("view/layout.php", "view/stranka/profil.php", ["Stranka" => $data]);
+            exit();
+            $submit = 0;
+        }
 
         
        
         
-        if($data["mailStranke"] == NULL){
+        if($data["mailStranke"] == NULL && $submit != 0){
             #$mail = [$data["mailStranke"]];
             $Stranka = eshopDB::getStranka($_SESSION);
             
@@ -421,6 +463,13 @@ class strankaController {
         # Preverimo, če je email naslov ustrezen
        
         $data["mailStranke"] = $_SESSION["mailStranke"];
+
+        if($data["ulica"] == NULL && $data["hisnaSt"] == NULL && $data["posta"] == NULL && $data["postnaSt"] == NULL){
+            $data["err"] = "Prosimo ne pustite popolnoma praznega obrazca.";
+            echo ViewHelper::render("view/layout.php", "view/stranka/profil.php", ["Stranka" => $data]);
+            
+            $submit = 0;
+        }
         
         
        

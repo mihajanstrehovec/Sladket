@@ -17,7 +17,7 @@
     
             <div class ="profilVsebnik overflow-auto" style="padding: 7%; height: 75vh;">
             
-                
+                <p style ="color: red"><?= $Stranka["err1"]?></p>
                 <!-- FORM zamenjava gesla -->
                 <form action = "<?= BASE_URL . "profil" ?>" method = "POST">
                 
@@ -80,8 +80,9 @@
 
                 <!-- FORM posodobitev naslova -->
                 Posodobitev naslova
+                <p style ="color: red"><?= $Stranka["err"]?></p>
                 <form action = "<?= BASE_URL . "profil/posodobiNaslov" ?>" method = "POST">
-
+                        
                             <div class = "form-row">
                                 <div class ="col-lg-5">
                                     

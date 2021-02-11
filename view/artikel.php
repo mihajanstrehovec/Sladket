@@ -48,7 +48,7 @@
                         <?php for($i = 0; $i < count($Artikel["Images"]); $i++):?>
                             <div class="mySlides fade">
                                 <div class="trenutnaSlika">1 / 3</div>
-                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" style="width:100%">
+                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" class = "displayImage2" style = "width: 100%;">
                                 
                             </div>
                         <?php endfor;?>
@@ -67,7 +67,7 @@
                   <s style = "margin-right: 5px; color: rgb(240, 210, 157)!important;"><?= $Artikel["cenaArtikla"] + rand(0, 30)?></s><?= $Artikel["cenaArtikla"]?>
                 </div>
                 <?php 
-                
+                if($_SESSION["tipUporabnika"] == "gost"){
                 if($Artikel["steviloOcen"] == 0){
                     
                     $ocena = 0;
@@ -97,7 +97,7 @@
                     
                     } 
                       
-                      } ?>
+                      }} ?>
                 <!-- Se izpiše ko je prijavljena stranka -->
                 <?php if($_SESSION["tipUporabnika"] == "stranka"): ?> 
                     <div class ="row no-gutters justify-content-center dodVkos">

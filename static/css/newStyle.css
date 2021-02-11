@@ -3,12 +3,18 @@
 
 
 
+.sMarket{
+    font-family: 'Nunito', sans-serif!important;
+    font-size: 2em!important;
+    font-weight: 700!important;
+}
+
 
 
 body{
     background: rgb(240, 210, 157);
-     overflow: hidden; 
-    font-family: 'Product Sans';
+     overflow: hidden;
+     font-family: 'Nunito', sans-serif;
     font-weight: normal; 
     font-style: normal;
 }
