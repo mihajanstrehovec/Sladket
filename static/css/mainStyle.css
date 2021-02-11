@@ -1,0 +1,24 @@
+
+
+body{
+    /* background: #faedcd; */
+    /* background: linear-gradient(180deg, rgba(89,145,144,1) 0%, rgba(229,229,229,1) 100%); */
+    min-height: 100vh;
+}
+
+nav{
+    /* background: rgb(89,145,144); */
+    /* box-shadow: 0px 0px 3px rgba(0,0,0,0.5); */
+    height: 6vh;
+    margin-bottom: 2vh;
+}
+
+
+
+h1{
+    color: whitesmoke;
+}
+
+.profilVsebnik{
+    height: 70vh;
+}

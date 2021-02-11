@@ -1,0 +1,267 @@
+/* Modal za brisanje slik */
+.modalIzbris {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) { 
+    .modalIzbris:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  
+  .modalIzbris-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+.modalIzbris-content{
+    background-color: white!important;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    padding-bottom: 5%;
+    
+}
+
+.modalIzbris-content > h4 {
+    color: rgb(255, 56, 56);
+    font-weight: 600;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+
+/* Modal izbris slike content */
+
+/* Skrij checkbox */
+.izbrisiSlikoC { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* Stil slike */
+.izbrisiSlikoC + img {
+    cursor: pointer;
+}
+  
+  /* Izbrani checkboxi */
+.izbrisiSlikoC:checked + img {
+    outline: 2px solid #f00;
+}
+
+.modalIzbris-content > form{
+    margin-top: 100px;
+}
+
+.modalIzbris-content > button{
+    margin-top: 2%;
+    width: 5vw;
+}
+
+#image-gallery{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18%;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+
+
+
+/* Modal za opozarjanje o napakah slik */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Gumba za prejšno in naslednjo sliko */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Pozicija desnega gumba */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Pozicija levega gumba */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ko gremo čez gum se oyadje pobarva */
+.prev:hover, .next:hover {
+  background-color: rgba(89,145,144,0.5);
+}
+
+
+/* Ob hover puščice ostanete beli */ 
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+
+/* Trenutna slika v desnem zgornjem kotu */
+.trenutnaSlika {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* Animacije prehoda */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+#error{
+    color: white;
+}
+.modal-content{
+    background-color: rgba(255, 79, 79, 1);
+}
+.modal-confirm {		
+	color: #636363;
+	width: 400px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -2px;
+}
+.modal-confirm .modal-body {
+	color: #FFFFFF;
+}
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;		
+	border-radius: 5px;
+	font-size: 13px;
+	padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+	color: #999;
+}		
+.modal-confirm .icon-box {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 50%;
+	z-index: 9;
+	text-align: center;
+	border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+	color: #f15e5e;
+	font-size: 46px;
+	display: inline-block;
+	margin-top: 13px;
+}
+.modal-confirm .btn, .modal-confirm .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #60c7c1;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	min-width: 120px;
+	border: none;
+	min-height: 40px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+.modal-confirm .btn-secondary {
+	background: #c1c1c1;
+}
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+	background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+	background: #f15e5e;
+}
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+	background: #ee3535;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}

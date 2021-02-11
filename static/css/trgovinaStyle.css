@@ -1,0 +1,108 @@
+
+
+/* POMEMBNO PRI FONT IMPORTU */
+/* URL LINK JE NASTAVLJEN NA MOJO (MIHA) TRENUTNO NASTAVITVE STREŽNIKA, ZATO JE POTREBNO LINK ZAMENJATI NA USTREZNEGA VAŠEGA*/
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.eot');
+    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.woff2') format('woff2'),
+        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.woff2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.eot');
+    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.woff2') format('woff2'),
+        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.woff2.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+.itemList{
+    width: 55vw;
+    height: 66vh;
+    background: rgb(218,224,224);
+    float: right;
+    margin-top: 0.6vh;
+    padding-top: 30px;
+
+    
+}
+
+.title{
+    width: 55vw;
+    background-color: rgba(89,145,144,1);
+    height: 4vh;
+    float: right;
+    margin-top: 7vh;
+    color: white;
+}
+
+h3{
+    color: whitesmoke;
+}
+
+
+.item{
+    
+    margin-right: 7%!important;
+    height: fit-content;
+    background-color: rgba(0,0,0,0);
+    display: inline-block !important;
+    float: none !important;
+    margin: 30px;
+    margin-top: 40px!important;
+    margin-bottom: 300px;
+    
+}
+
+.kategorije{
+    float: left;
+    width: 20vw;
+    height: 30vh;
+    
+    position: absolute;
+    margin-top: 11.6vh;
+    
+}
+
+.kategorijeTitle{
+    width: 20vw;
+    background-color: rgba(89,145,144,1);
+    height: 4vh;
+    float: left;
+    margin-top: 7vh;
+    color: white;
+    position: absolute;
+}
+
+.artikelVsebnik{
+    width: 55vw;
+    height: 66vh;
+    background: rgb(218,224,224);
+    margin-top: 0.6vh;
+    padding-top: 30px;
+   
+}
+
+
+.displayImage{
+    height: 300px;
+    width: auto;
+}
+
+.prikaznoImeArtikla{
+    font-family: "Product Sans";
+        font-weight:bold!important;
+}

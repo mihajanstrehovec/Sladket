@@ -1,0 +1,1 @@
+// ČE bo čas implementiraj funkcijo, ki bo glede na scroll premaknila ozadje zna bit lit

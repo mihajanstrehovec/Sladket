@@ -1,0 +1,31 @@
+.registerVsebnik{
+    height: fit-content;
+    /* background-color: rgb(218,224,224); */
+    /* margin-top: 0.5vh; */
+    background-color: rgb(248, 242, 200);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+    
+}
+
+.titleRegister{
+    /*width: 55vw;*/
+    /* background-color: rgba(89,145,144,1); */
+    background-color: #dfe4bb!important;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+    height: 4vh;
+    margin-top: 7vh;
+    color: white;
+}
+
+form > div{
+    /* margin: 1vh; */
+}
+
+.btn.my-4{
+    background: rgb(240, 210, 157)!important;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+} 
+
+.captcha{
+    margin-top: 3%;
+}
