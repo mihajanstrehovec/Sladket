@@ -24,7 +24,7 @@ require_once("controller/strankaController.php");
 require_once("controller/adminController.php");
 require_once("controller/eShopRestControler.php");
 
-define("BASE_URL", $_SERVER["SCRIPT_NAME"] . "/");
+define("BASE_URL", "https://sladket.herokuapp.com" . "/");
 $FILE_URL = str_replace("/index.php", "",$_SERVER["SCRIPT_NAME"]);
 define("BASE_FILE", $FILE_URL . "/");
 #var_dump($FILE_URL);
