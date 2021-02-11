@@ -2,10 +2,10 @@
 #var_dump(phpinfo());
 #exit();
 // enables sessions for the entire app
- session_start();
-if($_SESSION["tipUporabnika"] == NULL){
-    $_SESSION["tipUporabnika"] = "gost";
-}
+session_start();
+// if($_SESSION["tipUporabnika"] == NULL){
+//     $_SESSION["tipUporabnika"] = "gost";
+// }
 
 #var_dump($_SESSION);
 
