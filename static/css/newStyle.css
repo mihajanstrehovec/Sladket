@@ -1,28 +1,6 @@
 /* POMEMBNO PRI FONT IMPORTU */
 /* URL LINK JE NASTAVLJEN NA MOJO (MIHA) TRENUTNO NASTAVITVE STREŽNIKA, ZATO JE POTREBNO LINK ZAMENJATI NA USTREZNEGA VAŠEGA*/
 
-@font-face {
-    font-family: 'Product Sans';
-    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.eot');
-    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.woff2') format('woff2'),
-        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Regular.woff2.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Product Sans';
-    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.eot');
-    src: url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.woff2') format('woff2'),
-        url('https://localhost/server/h/EP-seminarska-naloga/e-shop/fonts/ProductSans-Bold.woff2.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 
 
