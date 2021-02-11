@@ -6,7 +6,7 @@
         
             <div class = col-lg-6>
                 <div class ="titleRegister" align ="center" style ="padding-top: 0.4vh; margin-top: 10vh;">
-                    <h4 style ="font-weight: 600;">REGISTRACIJA</h4>
+                    <h4 style ="font-weight: 600;">REGISTRACIJA1111</h4>
                 </div>
             
                 <div class ="registerVsebnik" style="padding: 60px;">
