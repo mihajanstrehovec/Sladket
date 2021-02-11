@@ -48,7 +48,7 @@
                         <?php for($i = 0; $i < count($Artikel["Images"]); $i++):?>
                             <div class="mySlides fade">
                                 <div class="trenutnaSlika">1 / 3</div>
-                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" class = "displayImage2" style = "width: 100%;">
+                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" class = "displayImage2" >
                                 
                             </div>
                         <?php endfor;?>
