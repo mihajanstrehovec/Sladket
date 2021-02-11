@@ -14,9 +14,9 @@ use PHPMailer\PHPMailer\Exception;
 $FILE_URL = str_replace("/index.php", "",$_SERVER["SCRIPT_NAME"]);
 define("BASE_FILE", $FILE_URL . "/");
 
-require ''."sladket.herokuapp.com/".'PHPMailer-master/src/Exception.php';
-require ''."sladket.herokuapp.com/".'PHPMailer-master/src/PHPMailer.php';
-require ''."sladket.herokuapp.com/".'PHPMailer-master/src/SMTP.php';
+// require ''."sladket.herokuapp.com/".'PHPMailer-master/src/Exception.php';
+// require ''."sladket.herokuapp.com/".'PHPMailer-master/src/PHPMailer.php';
+// require ''."sladket.herokuapp.com/".'PHPMailer-master/src/SMTP.php';
 
 
 
