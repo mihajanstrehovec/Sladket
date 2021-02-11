@@ -17,7 +17,7 @@ function zoom(event) {
     //scale = Math.min(Math.max(.125, scale), 4);
     //console.log()
     // Apply scale transform
-    imgSc.style.transform = translateY(${scale}px);
+    imgSc.style.transform = translateY(scale+"px");
   }
   
   let scale = 1;
