@@ -65,7 +65,7 @@ require_once "model/eshopDB.php";
                                         
                                         <!-- Slika artikla -->
                                         <?php   $imeSlike = eshopDB::getImages($Artikel);   ?>
-                                        <img src="<?= IMAGES_URL . "/products/". $imeSlike[0]["imeSlike"]?>" height= "1000px" style="width:100%; " class ="displayImage">
+                                        <img src="<?= IMAGES_URL . "/products/". $imeSlike[0]["imeSlike"]?>" height= "1000px"  class ="displayImage">
 
                                         <!-- Text pri artiklu -->
                                         <div id ="prikaznoImeArtikla" style ="margin-top: 15%; color: #515151; font-weight:bold!important; font-size: 2em;">
