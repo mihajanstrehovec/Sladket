@@ -37,21 +37,21 @@
 
                 <!-- Dodajanje slike -->
                 <div class = "form-group row" style = "margin: 20px 0px 0px 1px;">
-                    <b style ="color: rgb(240, 210, 157); font-weight: 600;"> DODAJ SLIKE:</b> <input type="file" name="file[]" id="file" multiple style = "margin-left: 20px;">  
+                    <b style ="color: rgba(0,0,0,0.45)!important; font-weight: 600;"> DODAJ SLIKE:</b> <input type="file" name="file[]" id="file" multiple style = "margin-left: 20px;">  
                 </div>
         
             
             
                 <!-- Cena -->
                 <div class="form-group row">
-                    <label for="example-number-input" class ="col-1" style ="margin-top: 24px; color: rgb(240, 210, 157); font-weight: 600;">CENA</label>
+                    <label for="example-number-input" class ="col-1" style ="margin-top: 24px; color: rgba(0,0,0,0.45)!important; font-weight: 600;">CENA</label>
                     <input class="form-control" type="number" name="cenaArtikla" value="7" id="example-number-input" style ="width: 10%; flaot: left; margin-top: 20px;">
                 </div>
                 
 
                 <!-- Zaloga -->
                 <div class="form-group row">
-                    <label for="example-number-input" class ="col-1" style ="margin-top: 24px; color: rgb(240, 210, 157); font-weight: 600; float: left; margin-right: 10px;">ZALOGA</label>
+                    <label for="example-number-input" class ="col-1" style ="margin-top: 24px; color: rgba(0,0,0,0.45)!important; font-weight: 600; float: left; margin-right: 10px;">ZALOGA</label>
                     <input class="form-control" type="number" name="zalogaArtikla" value="15" id="example-number-input" style ="width: 10%; float: left; margin-top: 20px;">
                 </div>   
             

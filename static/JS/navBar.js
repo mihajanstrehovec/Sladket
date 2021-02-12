@@ -23,31 +23,31 @@ switch(stran){
     
     case "dodaj":
       
-        dodajArtikel.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        dodajArtikel.style.textDecoration = "underline";
        
     break;
 
     case "narocila":
         
     if(naročilaProdajalec != null){
-          naročilaProdajalec.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+          naročilaProdajalec.style.textDecoration = "underline";
         } else{
-          narocilaStranka.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+          narocilaStranka.style.textDecoration = "underline";
         }
         
        
     break;
 
     case "stranke":
-        stranke.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        stranke.style.textDecoration = "underline";
     break;
 
     case "profil":
 
       if(profilProdajalec != null){
-        profilProdajalec.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        profilProdajalec.style.textDecoration = "underline";
       } else{
-        profilStranka.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        profilStranka.style.textDecoration = "underline";
       }
       
 
@@ -60,28 +60,28 @@ switch(stran){
     break;
 
     case "vpis":
-        vpis.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        vpis.style.textDecoration = "underline";
     break;
 
     case "ustvari":
 
-      ustvariProdajalca.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+      ustvariProdajalca.style.textDecoration = "underline";
         
     break;
 
     case "prodajalci":
 
-      prodajalci.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+      prodajalci.style.textDecoration = "underline";
 
     break;
 
     case "spremeni-geslo":
-      nastavitveAdmin.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+      nastavitveAdmin.style.textDecoration = "underline";
     break;
 
     case "profil":
 
-        profilProdajalec.style.textShadow = "0px 2px 0px rgba(0,0,0,0.25)";
+        profilProdajalec.style.textDecoration = "underline";
         
     break;
 

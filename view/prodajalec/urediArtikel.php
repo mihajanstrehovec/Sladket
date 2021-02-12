@@ -21,7 +21,7 @@
                 <input form = "urediArtikel" type = "hidden" name = "zalogaArtikla" value ="<?= $Artikel["zalogaArtikla"]?>" placeholder ="<?= $Artikel["zalogaArtikla"]?>">
                 <input form = "urediArtikel" type = "hidden" name = "kategorijaArtikla" placeholder ="<?= $Artikel["kategorijaArtikla"]?>" value ="<?= $Artikel["kategorijaArtikla"]?>">
                 <input form = "urediArtikel" type = "hidden" name = "idArtikla" value ="<?=$_GET['idArtikla']?>">
-                <h4 style ="font-weight: 600;"><input form = "urediArtikel" type ="text" placeholder ="<?= $Artikel["imeArtikla"]?>" value = "<?= $Artikel["imeArtikla"]?>" name = "imeArtikla" style ="background-color: rgba(0,0,0,0); border: 0px; color: white;"></h4>
+                <h4 style ="font-weight: 600;"><input form = "urediArtikel" type ="text" placeholder ="<?= $Artikel["imeArtikla"]?>" value = "<?= $Artikel["imeArtikla"]?>" name = "imeArtikla" style ="background-color: rgba(0,0,0,0); border: 0px; color: rgba(0,0,0,0.45)!important;"></h4>
             </form>
         </div>
         
@@ -37,7 +37,7 @@
                
                <div class ="overflow-auto" id="besediloOpisa">
                     <textarea form = "urediArtikel" placeholder="<?= $Artikel["opisArtikla"]?>" class="form-control" id="exampleFormControlTextarea1" rows="7" 
-                    name ="opisArtikla" style ="width: 100%; float: left; margin-top: 20px; background-color: rgba(0,0,0,0); border: 0px; color: white;">
+                    name ="opisArtikla" style ="width: 100%; float: left; margin-top: 20px; background-color: rgba(0,0,0,0); border: 0px; color: rgba(0,0,0,0.45)!important;">
                         <?= $Artikel["opisArtikla"]?>
                     </textarea>
                
@@ -58,7 +58,7 @@
                                     HOLDER TEKST - NASTAVI SE Z JS
                                 </div>
                                 
-                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" style="width:100%">
+                                <img src="<?= IMAGES_URL . "/products/". $Artikel["Images"][$i]["imeSlike"]?>" height = "200px" >
                                 
                             </div>
                         <?php endfor;?>
@@ -75,7 +75,7 @@
                 <!-- FORM dodajanje slik -->
                 <div  class = "form-group row" style = "margin: 20px 0px 0px 1px;">
                 
-                    <em style = "color: rgb(240, 210, 157); font-weight: 600;">Dodaj slike: </em><input form = "urediArtikel" type="file"  name="file[]" id="file" multiple>
+                    <em style = "color:rgba(0,0,0,0.45)!important; font-weight: 600;">Dodaj slike: </em><input form = "urediArtikel" type="file"  name="file[]" id="file" multiple>
                 
                 </div>
 
@@ -121,7 +121,9 @@
 
                 <!-- FORM cena -->
                 <div class ="row no-gutters justify-content-center nakup" style = "margin-top: 1vh;">
-                    <h5 style ="font-weight: 600; color: rgba(0, 0, 0, 0.7);">Cena:</h5> <input form ="urediArtikel" class="form-control" type="number" name="cenaArtikla" value="<?= $Artikel["cenaArtikla"]?>" id="example-number-input" style ="width: 20%; flaot: left; margin-top: 20px; background-color: rgba(0,0,0,0); border: 0px; color: rgba(89,145,144,0.7);;">
+                    <h5 style ="font-weight: 600; color: rgba(0, 0, 0, 0.7);">Cena:</h5> 
+                    <input form ="urediArtikel" class="form-control" type="number" name="cenaArtikla" value="<?= $Artikel["cenaArtikla"]?>" id="example-number-input" 
+                    style ="width: 20%; flaot: left; margin-top: 20px; background-color: rgba(0,0,0,0); border: 0px; color: rgba(0,0,0,0.45)!important;">
                 </div>
                
                

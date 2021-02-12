@@ -64,7 +64,7 @@
 
                         
                 <div class ="row no-gutters justify-content-center nakup">
-                  <s style = "margin-right: 5px; color: rgb(240, 210, 157)!important;"><?= $Artikel["cenaArtikla"] + rand(0, 30)?></s><?= $Artikel["cenaArtikla"]?>
+                  <s style = "margin-right: 5px; color: rgb(144 138 128)!important;"><?= $Artikel["cenaArtikla"] + rand(0, 30)?></s><?= $Artikel["cenaArtikla"]?>
                 </div>
                 <?php 
                 if($_SESSION["tipUporabnika"] == "gost"){
