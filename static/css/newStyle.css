@@ -11,7 +11,9 @@
     font-weight: 700!important;
 }
 
-
+button{
+    color:rgba(0,0,0,0.45)!important;
+}
 
 
 
@@ -32,6 +34,7 @@ nav{
 
 .navbar-brand{
     color:rgba(0,0,0,0.45)!important;
+    font-family: 'Nunito', sans-serif!important;
 }
 
 
@@ -52,6 +55,7 @@ nav{
 
 a > .navbar-brand{
     color:rgba(0,0,0,0.45)!important;
+    font-family: 'Nunito', sans-serif!important;
 }
 
 #smarket{
