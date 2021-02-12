@@ -3,11 +3,15 @@
 
 
 
+
+
 .sMarket{
     font-family: 'Nunito', sans-serif!important;
     font-size: 2em!important;
     font-weight: 700!important;
 }
+
+
 
 
 
@@ -27,7 +31,7 @@ nav{
 }
 
 .navbar-brand{
-    color: #ceebc2;
+    color:rgba(0,0,0,0.45)!important;
 }
 
 
@@ -47,7 +51,7 @@ nav{
 }
 
 a > .navbar-brand{
-    color: #ccd5ae;
+    color:rgba(0,0,0,0.45)!important;
 }
 
 #smarket{
