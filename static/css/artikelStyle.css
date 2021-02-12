@@ -10,7 +10,7 @@ and open the template in the editor.
 
 
 #opisIzdelka{
-    color: white;
+    color:rgba(0,0,0,0.45)!important;
     height: 100%;
     width: 45%;
     /* background-color: rgba(89,145,144,0.7); */
